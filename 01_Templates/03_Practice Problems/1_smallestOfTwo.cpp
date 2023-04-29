@@ -1,4 +1,4 @@
-// Problem Links : https://practice.geeksforgeeks.org/problems/c-template/0
+// Question Links : https://practice.geeksforgeeks.org/problems/c-template/0
 
 
 //{ Driver Code Starts
