@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-template<class T>    // template<class T> 
+template<typename T>    // template<class T> 
 class Pair {
     public:
         T x, y;
