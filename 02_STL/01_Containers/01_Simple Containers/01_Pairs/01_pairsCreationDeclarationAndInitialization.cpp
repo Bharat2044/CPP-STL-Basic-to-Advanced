@@ -42,7 +42,7 @@ int main() {
     cout << p2.first << "  " << p2.second << endl;
     
     
-    pair<double, char> p3(10.5, 'G');   // declaration + initialization
+    pair<double, char> p3(10.5, 'F');   // declaration + initialization
     cout << "\nPair p3 values are: ";
     cout << p3.first << "  " << p3.second << endl;
     
@@ -52,12 +52,17 @@ int main() {
     cout << p4.first << "  " << p4.second << endl;
     
     
-    // Initializing multiple values
-    pair<int, char> p5(5, 'X'), p6(100, 'Z');   // declaration + initialization
+    pair<double, string> p5 = {10.5, "Hitesh"};   // declaration + initialization
     cout << "\nPair p5 values are: ";
     cout << p5.first << "  " << p5.second << endl;
+    
+    
+    // Initializing multiple values
+    pair<int, char> p6(5, 'X'), p7(100, 'Z');   // declaration + initialization
     cout << "\nPair p6 values are: ";
     cout << p6.first << "  " << p6.second << endl;
+    cout << "\nPair p7 values are: ";
+    cout << p7.first << "  " << p7.second << endl;
   
     return 0;
 }
