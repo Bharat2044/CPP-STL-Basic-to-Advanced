@@ -72,7 +72,7 @@ int main() {
     arr2.fill(9);
     
     // Displaying array after filling
-    cout << "Array arr2 after filling operation is : ";
+    cout << "Array arr2 before filling operation is : ";
     for(int i=0; i<arr2.size(); i++)
         cout << arr2[i] << " ";
     cout << endl << endl;
@@ -99,6 +99,7 @@ int main() {
     for(int i=0; i<6; i++)
         cout << arr3[i] << "  ";
     cout << endl;
+	
     cout << "The arr4 array elements after swapping are : ";
     for(int i=0; i<6; i++)
         cout << arr4[i] << "  ";
