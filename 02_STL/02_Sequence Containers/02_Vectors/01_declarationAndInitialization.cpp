@@ -3,7 +3,7 @@
 using namespace std;
 
 // Printing Vector Elements
-void print(vector<int> v) {
+void print(const vector<int> &v) {
     for(int i=0; i<v.size(); i++)
         cout << v[i] << "  ";
     cout << endl;
@@ -19,20 +19,25 @@ int main() {
     vector<int> v4(6, -2);
     vector<int> v5{1, 2, 6, 4};
     vector<int> v6 = {1, 2, 3, 4, 5, 7};
+    
+    // Copy array elements into vector
+    int arr[] = {10, 5, 20, 45};
+    int size = sizeof(arr)/sizeof(arr[0]);
+    vector<int> v7(arr, arr+size);
 
     // Printing Vector Size  
-
     cout << "--------- Printing Vector Size: ---------\n";
     cout << "Size of v1 = " << v1.size() << endl;
     cout << "Size of v2 = " << v2.size() << endl;
     cout << "Size of v3 = " << v3.size() << endl;
     cout << "Size of v4 = " << v4.size() << endl;
     cout << "Size of v5 = " << v5.size() << endl;
-    cout << "Size of v6 = " << v6.size() << endl;
+    cout << "Size of v5 = " << v6.size() << endl;
+    cout << "Size of v7 = " << v7.size() << endl;
 
 
     // Printing Vector Elements
-    cout << "\n--------- Printing vay Elements: ---------\n";
+    cout << "\n--------- Printing vector Elements: ---------\n";
     cout << "Vector v1 elements are: ";
     print(v1);
 
@@ -51,11 +56,7 @@ int main() {
     cout << "Vector v6 elements are: ";
     print(v6);
     
-    // Copy array elements into vector
-    int arr[] = {10, 5, 20, 45};
-    int size = sizeof(arr)/sizeof(arr[0]);
-    
-    vector<int> v7(arr, arr+size);cout << "Vector v6 elements are: ";
+    cout << "Vector v7 elements are: ";
     print(v7);
     
     // Taking Input From User
