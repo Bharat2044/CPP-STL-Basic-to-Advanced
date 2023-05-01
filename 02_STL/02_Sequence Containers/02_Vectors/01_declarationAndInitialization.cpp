@@ -72,7 +72,7 @@ int main() {
     }
     
     cout << "Vetcor v8 elements are: ";    
-    print(v7);
+    print(v8);
     cout << "First element of v8 = " << v8.front() << endl;
     cout << "First element of v8 = " << v8.back() << endl;
 
